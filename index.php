@@ -128,35 +128,35 @@
 						<div class="inner">
 							<h2 class="major">Send your request</h2>
 							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form action="contatto.php" method="POST">
+							<form action="contact.php" method="POST">
 								<div class="fields">
 									<div class="field">
-										<label for="name" required>Name</label>
-										<input type="text" name="name" id="name" />
+										<label for="name">Name</label>
+										<input type="text" required name="name" id="name" />
 									</div>
 									<div class="field">
-										<label for="name" required>Surname</label>
-										<input type="text" name="surname" id="surname" />
+										<label for="name">Surname</label>
+										<input type="text" required name="surname" id="surname" />
 									</div>
 									<div class="field">
-										<label for="email" required>Email</label>
-										<input type="email" name="email" id="email" />
+										<label for="email">Email</label>
+										<input type="email" required name="email" id="email" />
 									</div>
 									<div class="field">
-										<label for="subject" required>Subject</label>
-										<input type="text" name="subject" id="subject" />
+										<label for="subject">Subject</label>
+										<input type="text" required name="subject" id="subject" />
 									</div>
 									<div class="field">
 										<label for="priority" required>Priority</label>
-										<select id="priority" name="priority">
+										<select id="priority" name="priority" required>
 											<option value="high">High</option>
 											<option value="normal" >Normal</option>
 											<option value="low" selected>Low</option>
 										</select>
 									</div>
 									<div class="field">
-										<label for="message"required>Description</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<label for="message">Description</label>
+										<textarea name="message" required id="message" rows="4"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
