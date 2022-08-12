@@ -1,0 +1,5 @@
+Redirect 301 /index.php https://yoursite1.org/index.php
+
+Redirect 301 http://yoursite1.org/ https://yoursite2.org/index.php
+
+ErrorDocument 404 /404.php
