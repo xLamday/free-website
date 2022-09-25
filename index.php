@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 
+<?php
+session_start();
+
+if (isset($_SESSION['session_id'])) {
+    $session_user = htmlspecialchars($_SESSION['session_user'], ENT_QUOTES, 'UTF-8');
+    $session_id = htmlspecialchars($_SESSION['session_id']);
+
+echo<<<HTML
 <html>
 	<head>
 		<title>YOURSITE</title>
@@ -195,3 +203,18 @@
 			<script src="/js/stmp.js"></script>
 	</body>
 </html>
+
+HTML;
+
+} else {
+    echo <<<HTML
+   <body>
+      <script>
+         setTimeout(function(){
+            window.location.href = 'yoursite.com/account/login.php';
+         }, 1);
+      </script>
+   </body>
+</html>
+HTML;
+}
